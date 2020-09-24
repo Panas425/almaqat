@@ -10,6 +10,7 @@ const flash = require('connect-flash');
 const passport = require("passport");
 const expressLayouts = require('express-ejs-layouts');
 const methodOverride = require('method-override');
+const cool = require('cool-ascii-faces');
 const http = require('http');
 const PORT = process.env.PORT || 3000;
 
@@ -30,9 +31,9 @@ const app = express();
 
 var server = http.Server(app);
 
-server.listen(PORT, function () {
-    console.log("server is starting");
-})
+//server.listen(PORT, function () {
+//    console.log("server is starting");
+//})
 
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
@@ -42,6 +43,9 @@ const db = mysql.createConnection({
 })
 
 const publicDir = path.join(__dirname, './public');
+app.set('views',path.join(__dirname,'views'));
+app.set('view engine', 'ejs');
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -81,8 +85,9 @@ app.use((req, res, next) => {
     next();
 });
 
-app.engine('ejs', require('ejs').renderFile);
-app.set('view engine', 'ejs')
+
+
+
 
 db.connect((error) => {
     if (error) {
