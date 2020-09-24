@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style1.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/auth/logout" style="color: orange;">Log Out</a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+
+        </header>
+
+        <main>
+            <div id="wrapper" style="padding-top: 25px;">
+                <% if(teacherClass10 != '') { %>
+                <div style="font-size:50px;color: azure;">Male</div>
+                <% } %>
+                <div id="one" class="card" style="width: 200px; float:left">
+                    <img src="/images/math.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/maths/male/math10" class="btn btn-primary">رياضيات </a>
+                </div>
+                <div id="two" class="card" style="width: 200px;float: left;">
+                    <img src="/images/earth.jpeg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/earth_science/male/earthscience10" class="btn btn-primary">علوم أرض</a>
+                </div>
+                <div id="three" class="card" style="width: 200px;float: left;">
+                    <img src="/images/biology.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/biology/male/biology10" class="btn btn-primary">احياء</a>
+                </div>
+                <div id="four" class="card" style="width: 200px;float: left;">
+                    <img src="/images/chemestry.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/chemestry/male/chem10" class="btn btn-primary">كيمياء</a>
+                </div>
+                <div id="six" class="card" style="width: 200px;float: left;">
+                    <img src="/images/arabic.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/arabic/male/arabic10" class="btn btn-primary">اللغه العربيه</a>
+                </div>
+                <div id="eight" class="card" style="width: 200px;float: left;">
+                    <img src="/images/computer.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/computer/male/computer10" class="btn btn-primary">حاسوب</a>
+                </div>
+                <div id="nine" class="card" style="width: 200px;float: left;">
+                    <img src="/images/vocational.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/vocational/male/vocational10" class="btn btn-primary">المهني</a>
+                </div>
+                <div id="seven" class="card" style="width: 200px;float: left;">
+                    <img src="/images/english.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/english/male/english10" class="btn btn-primary">English</a>
+                </div>
+                <div id="ten" class="card" style="width: 200px;float: left;">
+                    <img src="/images/physics.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/physics/male/physics10" class="btn btn-primary">فيزياء</a>
+                </div>
+                <div id="11" class="card" style="width: 200px;float: left;">
+                    <img src="/images/economy.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/economy/male/economy10" class="btn btn-primary">الثقافه المالية</a>
+                </div>
+                <div id="12" class="card" style="width: 200px;float: left;">
+                    <img src="/images/history.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/history/male/history10" class="btn btn-primary">تاريخ</a>
+                </div>
+                <div id="13" class="card" style="width: 200px;float: left;">
+                    <img src="/images/geo.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/geo/male/geo10" class="btn btn-primary">جغرافيا</a>
+                </div>
+                <div id="13" class="card" style="width: 200px;float: left;">
+                    <img src="/images/jordan.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/nation/male/nation10" class="btn btn-primary">وطنية</a>
+                </div>
+                <div id="14" class="card" style="width: 200px;float: left;">
+                    <img src="/images/islam.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/islam/male/islam10" class="btn btn-primary">التربية الإسلامية</a>
+                </div>
+                <div id="15" class="card" style="width: 200px;float: left;">
+                    <img src="/images/science.jpg" class="card-img-top" alt="...">
+                    <a href="/subjects/science/male/science10" class="btn btn-primary">علوم</a>
+                </div>
+                
+            </div>
+            <div id="wrapper" style="padding-top: 350px;">
+                <% if(teacherClass10 != '') { %>
+                <div style="font-size:50px; color: azure;" class="gender" style="text-align: left;">Female</div>
+                <div id="one" class="card" style="width: 200px; float:left">
+                    <img src="/images/math.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/maths/female/math10" class="btn btn-primary">رياضيات </a>
+                </div>
+                <div id="two" class="card" style="width: 200px;float: left;">
+                    <img src="/images/earth.jpeg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/earth_science/female/earthscience10" class="btn btn-primary">علوم أرض</a>
+                </div>
+                <div id="three" class="card" style="width: 200px;float: left;">
+                    <img src="/images/biology.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/biology/female/biology10" class="btn btn-primary">احياء</a>
+                </div>
+                <div id="four" class="card" style="width: 200px;float: left;">
+                    <img src="/images/chemestry.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/chemestry/female/chem10" class="btn btn-primary">كيمياء</a>
+                </div>
+                <div id="six" class="card" style="width: 200px;float: left;">
+                    <img src="/images/arabic.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/arabic/female/arabic10" class="btn btn-primary">اللغه العربيه</a>
+                </div>
+                <div id="eight" class="card" style="width: 200px;float: left;">
+                    <img src="/images/computer.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/computer/female/computer10" class="btn btn-primary">حاسوب</a>
+                </div>
+                <div id="nine" class="card" style="width: 200px;float: left;">
+                    <img src="/images/vocational.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/vocational/female/vocational10" class="btn btn-primary">المهني</a>
+                </div>
+                <div id="seven" class="card" style="width: 200px;float: left;">
+                    <img src="/images/english.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/english/female/english10" class="btn btn-primary">English</a>
+                </div>
+                <div id="ten" class="card" style="width: 200px;float: left;">
+                    <img src="/images/physics.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/physics/female/physics10" class="btn btn-primary">فيزياء</a>
+                </div>
+                <div id="11" class="card" style="width: 200px;float: left;">
+                    <img src="/images/economy.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/economy/female/economy10" class="btn btn-primary">الثقافه المالية</a>
+                </div>
+                <div id="12" class="card" style="width: 200px;float: left;">
+                    <img src="/images/history.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/history/female/history10" class="btn btn-primary">تاريخ</a>
+                </div>
+                <div id="13" class="card" style="width: 200px;float: left;">
+                    <img src="/images/geo.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/geo/female/geo10" class="btn btn-primary">جغرافيا</a>
+                </div>
+                <div id="13" class="card" style="width: 200px;float: left;">
+                    <img src="/images/jordan.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/nation/female/nation10" class="btn btn-primary">وطنية</a>
+                </div>
+                <div id="14" class="card" style="width: 200px;float: left;">
+                    <img src="/images/islam.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/islam/female/islam10" class="btn btn-primary">التربية الإسلامية</a>
+                </div>
+                <div id="15" class="card" style="width: 200px;float: left;">
+                    <img src="/images/science.jpg" class="card-img-top" alt="...">
+                    <a href="/subjects/science/female/science10" class="btn btn-primary">علوم</a>
+                </div>
+                <% } %>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

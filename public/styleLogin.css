@@ -1,0 +1,93 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html, body {
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    height: 650px;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.input-group {
+    margin: 10px 0px 10px 0px;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.377);
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-group input {
+    height: 30px;
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #5F9EA0;
+    border: none;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    height: 500px;
+}
+
+footer {
+    height: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.267);
+    text-align: center;
+}

@@ -1,0 +1,82 @@
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+html,body{
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    min-height: 100%;
+    /*background-color: rgb(51, 56, 55);*/
+    background-size: cover;
+    background-position: center;
+}
+header{
+    height: 100px;
+    width: 1024px;
+    text-align: center;
+    padding-bottom: 200px;
+    padding-top: 30px;
+}
+nav{
+    background-color: rgba(255, 255, 255, 0.377);
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+main{
+    height: 480px;
+    text-align: right;
+    padding-left: 240px;
+    padding-right: 240px;
+    padding-bottom: 130px;
+    padding-top: 50px;
+}
+footer{
+    height: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.267);
+    text-align: center;
+}
+h1 {
+    font-size: 60px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+p{
+    font-size: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1 ;
+    margin-top: 0 ;
+    margin-bottom: 0 ;
+}
+a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav a {
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+footer p{
+    font-size: 10px;
+    text-align: center;
+    color: cornsilk;
+}
+.title{
+    text-align: center;
+}
+
+main p{
+    text-align: right;
+    padding-top: 30px;
+    font-size: 24px;
+}
+.pic{
+    text-align: center;
+}
