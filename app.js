@@ -31,9 +31,9 @@ const app = express();
 
 var server = http.Server(app);
 
-//server.listen(PORT, function () {
-//    console.log("server is starting");
-//})
+server.listen(PORT, function () {
+    console.log("server is starting");
+})
 
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
@@ -43,9 +43,6 @@ const db = mysql.createConnection({
 })
 
 const publicDir = path.join(__dirname, './public');
-app.set('views',path.join(__dirname,'views'));
-app.set('view engine', 'ejs');
-app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -87,7 +84,8 @@ app.use((req, res, next) => {
 
 
 
-
+app.set('views',path.join(__dirname,'./views'));
+app.set('view engine', 'ejs');
 
 db.connect((error) => {
     if (error) {
