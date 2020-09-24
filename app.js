@@ -11,9 +11,7 @@ const passport = require("passport");
 const expressLayouts = require('express-ejs-layouts');
 const methodOverride = require('method-override');
 const http = require('http');
-const PORT = process.env.PORT || 3000;
 
-var server = http.Server(app);
 
 server.listen(PORT, () => {
     console.log("server is starting");
@@ -31,6 +29,10 @@ AWS.config.update({
 require('./config/passport')(passport);
 
 const app = express();
+
+const PORT = process.env.PORT || 3000;
+
+var server = http.Server(app);
 
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
