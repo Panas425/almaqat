@@ -11,7 +11,7 @@ const passport = require("passport");
 const expressLayouts = require('express-ejs-layouts');
 const methodOverride = require('method-override');
 const http = require('http');
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 
 
@@ -94,6 +94,8 @@ app.use('/auth', require('./routes/auth'));
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.listen(5001, () => {
+var server = http.Server(app);
+
+server.listen(PORT, () => {
     console.log("server is starting");
 })
