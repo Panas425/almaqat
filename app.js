@@ -11,11 +11,9 @@ const passport = require("passport");
 const expressLayouts = require('express-ejs-layouts');
 const methodOverride = require('method-override');
 const http = require('http');
+const PORT = process.env.PORT || 3000;
 
 
-server.listen(PORT, () => {
-    console.log("server is starting");
-})
 
 
 var AWS = require('aws-sdk');
@@ -30,9 +28,11 @@ require('./config/passport')(passport);
 
 const app = express();
 
-const PORT = process.env.PORT || 3000;
-
 var server = http.Server(app);
+
+server.listen(PORT, () => {
+    console.log("server is starting");
+})
 
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
@@ -50,7 +50,6 @@ app.use(express.static(publicDir));
 app.use(methodOverride('_method'));
 
 app.use(bodyparser.json());
-
 
 app.use(session({
     secret: 'secret',
