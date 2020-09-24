@@ -13,7 +13,11 @@ const methodOverride = require('method-override');
 const http = require('http');
 const PORT = process.env.PORT || 3000;
 
+var server = http.Server(app);
 
+server.listen(PORT, () => {
+    console.log("server is starting");
+})
 
 
 var AWS = require('aws-sdk');
@@ -44,6 +48,7 @@ app.use(express.static(publicDir));
 app.use(methodOverride('_method'));
 
 app.use(bodyparser.json());
+
 
 app.use(session({
     secret: 'secret',
@@ -94,8 +99,4 @@ app.use('/auth', require('./routes/auth'));
 app.use(passport.initialize());
 app.use(passport.session());
 
-var server = http.Server(app);
 
-server.listen(PORT, () => {
-    console.log("server is starting");
-})
