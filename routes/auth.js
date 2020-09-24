@@ -107,7 +107,7 @@ router.post('/register1', (req, res,next) => {
                             .then(user => {
                                 req.flash('success_msg', 'User registered');
                                 if(role === "teacher"){
-                                    passport.authenticate('passport-local', {
+                                    passport.authenticate('local', {
                                         successRedirect: '/registerTeacher',
                                         failureRedirect: '/loginStudent',
                                         failureFlash: true
