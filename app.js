@@ -43,10 +43,12 @@ const db = mysql.createConnection({
 })
 
 const publicDir = path.join(__dirname, './public');
+const viewsDir = path.join(__dirname, './views');
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static(publicDir));
+app.use(express.static(viewsDir));
 
 app.use(methodOverride('_method'));
 
