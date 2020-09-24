@@ -30,7 +30,7 @@ const app = express();
 
 var server = http.Server(app);
 
-server.listen(PORT, () => {
+server.listen(PORT, function() {
     console.log("server is starting");
 })
 
