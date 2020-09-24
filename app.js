@@ -30,7 +30,7 @@ const app = express();
 
 var server = http.Server(app);
 
-server.listen(PORT, function() {
+server.listen(PORT, function () {
     console.log("server is starting");
 })
 
@@ -81,8 +81,8 @@ app.use((req, res, next) => {
     next();
 });
 
-//app.use(expressLayouts);
-app.set('view engine', 'ejs');
+app.engine('ejs', require('ejs').renderFile);
+app.set('view engine', 'ejs')
 
 db.connect((error) => {
     if (error) {
