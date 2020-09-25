@@ -31,7 +31,7 @@ const app = express();
 
 var server = http.Server(app);
 
-server.listen(PORT, function () {
+server.listen(PORT,() => {
     console.log("server is starting");
 })
 
