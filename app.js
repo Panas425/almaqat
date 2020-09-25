@@ -10,7 +10,6 @@ const flash = require('connect-flash');
 const passport = require("passport");
 const expressLayouts = require('express-ejs-layouts');
 const methodOverride = require('method-override');
-const cool = require('cool-ascii-faces');
 const http = require('http');
 const PORT = process.env.PORT || 3000;
 
@@ -31,7 +30,7 @@ const app = express();
 
 var server = http.Server(app);
 
-server.listen(PORT,() => {
+server.listen(PORT, () => {
     console.log("server is starting");
 })
 
@@ -43,12 +42,10 @@ const db = mysql.createConnection({
 })
 
 const publicDir = path.join(__dirname, './public');
-const viewsDir = path.join(__dirname, './views');
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static(publicDir));
-app.use(express.static(viewsDir));
 
 app.use(methodOverride('_method'));
 
@@ -84,8 +81,8 @@ app.use((req, res, next) => {
     next();
 });
 
-app.engine('ejs', require('ejs').renderFile);
-app.set('view engine', 'ejs')
+//app.use(expressLayouts);
+app.set('view engine', 'ejs');
 
 db.connect((error) => {
     if (error) {
