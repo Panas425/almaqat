@@ -269,10 +269,10 @@ router.get("/classes/class10", (req, res) => {
 
 
 //teacher class 1
-router.get("/subjects/maths/male/math1", (req, res) => {
+router.get("/subjects/maths/Male/math1", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/male/math1", {
+            return res.render("subjects/maths/Male/math1", {
                 teacher: "teacher"
             });
         }
@@ -281,10 +281,10 @@ router.get("/subjects/maths/male/math1", (req, res) => {
         }
     }
 });
-router.get("/subjects/maths/female/math1", (req, res) => {
+router.get("/subjects/maths/Female/math1", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/female/math1", {
+            return res.render("subjects/maths/Female/math1", {
                 teacher: "teacher"
             });
         }
@@ -444,10 +444,10 @@ router.get("/subjects/science/male/scienceen1", (req, res) => {
     }
 });
 
-router.get("/subjects/maths/male/mathen1", (req, res) => {
+router.get("/subjects/maths/Male/mathen1", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/male/mathen1", {
+            return res.render("subjects/maths/Male/mathen1", {
                 teacher: "teacher"
             });
         }
@@ -456,10 +456,10 @@ router.get("/subjects/maths/male/mathen1", (req, res) => {
         }
     }
 });
-router.get("/subjects/maths/female/mathen1", (req, res) => {
+router.get("/subjects/maths/Female/mathen1", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/female/mathen1", {
+            return res.render("subjects/maths/Female/mathen1", {
                 teacher: "teacher"
             });
         }
@@ -496,10 +496,10 @@ router.get("/subjects/english/Male/english1", (req, res) => {
 
 
 //Teacher class 2
-router.get("/subjects/maths/male/math2", (req, res) => {
+router.get("/subjects/maths/Male/math2", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/male/math2", {
+            return res.render("subjects/maths/Male/math2", {
                 teacher: "teacher"
             });
         }
@@ -508,10 +508,10 @@ router.get("/subjects/maths/male/math2", (req, res) => {
         }
     }
 });
-router.get("/subjects/maths/female/math2", (req, res) => {
+router.get("/subjects/maths/Female/math2", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/female/math2", {
+            return res.render("subjects/maths/Female/math2", {
                 teacher: "teacher"
             });
         }
@@ -671,10 +671,10 @@ router.get("/subjects/science/male/scienceen2", (req, res) => {
     }
 });
 
-router.get("/subjects/maths/male/mathen2", (req, res) => {
+router.get("/subjects/maths/Male/mathen2", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/male/mathen2", {
+            return res.render("subjects/maths/Male/mathen2", {
                 teacher: "teacher"
             });
         }
@@ -683,10 +683,10 @@ router.get("/subjects/maths/male/mathen2", (req, res) => {
         }
     }
 });
-router.get("/subjects/maths/female/mathen2", (req, res) => {
+router.get("/subjects/maths/Female/mathen2", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/female/mathen2", {
+            return res.render("subjects/maths/Female/mathen2", {
                 teacher: "teacher"
             });
         }
@@ -724,10 +724,10 @@ router.get("/subjects/english/Male/english2", (req, res) => {
 
 
 //teacher class 3
-router.get("/subjects/maths/male/math3", (req, res) => {
+router.get("/subjects/maths/Male/math3", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/male/math3", {
+            return res.render("subjects/maths/Male/math3", {
                 teacher: "teacher"
             });
         }
@@ -736,10 +736,10 @@ router.get("/subjects/maths/male/math3", (req, res) => {
         }
     }
 });
-router.get("/subjects/maths/female/math3", (req, res) => {
+router.get("/subjects/maths/Female/math3", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/female/math3", {
+            return res.render("subjects/maths/Female/math3", {
                 teacher: "teacher"
             });
         }
@@ -899,10 +899,10 @@ router.get("/subjects/science/male/scienceen3", (req, res) => {
     }
 });
 
-router.get("/subjects/maths/male/mathen3", (req, res) => {
+router.get("/subjects/maths/Male/mathen3", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/male/mathen3", {
+            return res.render("subjects/maths/Male/mathen3", {
                 teacher: "teacher"
             });
         }
@@ -911,10 +911,10 @@ router.get("/subjects/maths/male/mathen3", (req, res) => {
         }
     }
 });
-router.get("/subjects/maths/female/mathen3", (req, res) => {
+router.get("/subjects/maths/Female/mathen3", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/female/mathen3", {
+            return res.render("subjects/maths/Female/mathen3", {
                 teacher: "teacher"
             });
         }
@@ -953,27 +953,27 @@ router.get("/subjects/english/Male/english3", (req, res) => {
 
 
 //teacher class 4
-router.get("/subjects/maths/male/math4", (req, res) => {
+router.get("/subjects/maths/Male/math4", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/male/math4", {
+            return res.render("subjects/maths/Male/math4", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/maths/male/math4');
+            return res.render('subjects/maths/Male/math4');
         }
     }
 });
-router.get("/subjects/maths/female/math4", (req, res) => {
+router.get("/subjects/maths/Female/math4", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/female/math4", {
+            return res.render("subjects/maths/Female/math4", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/maths/female/math4');
+            return res.render('subjects/maths/Female/math4');
         }
     }
 });
@@ -1158,27 +1158,27 @@ router.get("/subjects/vocational/male/vocational4", (req, res) => {
 
 
 //Teacher class 5
-router.get("/subjects/maths/male/math5", (req, res) => {
+router.get("/subjects/maths/Male/math5", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/male/math5", {
+            return res.render("subjects/maths/Male/math5", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/maths/male/math4');
+            return res.render('subjects/maths/Male/math4');
         }
     }
 });
-router.get("/subjects/maths/female/math5", (req, res) => {
+router.get("/subjects/maths/Female/math5", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/female/math5", {
+            return res.render("subjects/maths/Female/math5", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/maths/female/math4');
+            return res.render('subjects/maths/Female/math4');
         }
     }
 });
@@ -1362,27 +1362,27 @@ router.get("/subjects/vocational/male/vocational5", (req, res) => {
 
 
 //Teacher class 6
-router.get("/subjects/maths/male/math6", (req, res) => {
+router.get("/subjects/maths/Male/math6", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/male/math6", {
+            return res.render("subjects/maths/Male/math6", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/maths/male/math4');
+            return res.render('subjects/maths/Male/math4');
         }
     }
 });
-router.get("/subjects/maths/female/math6", (req, res) => {
+router.get("/subjects/maths/Female/math6", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/female/math6", {
+            return res.render("subjects/maths/Female/math6", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/maths/female/math4');
+            return res.render('subjects/maths/Female/math4');
         }
     }
 });
@@ -1641,27 +1641,27 @@ router.get("/subjects/nation/female/nation6", (req, res) => {
 
 
 //Teacher class 7
-router.get("/subjects/maths/male/math7", (req, res) => {
+router.get("/subjects/maths/Male/math7", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/male/math7", {
+            return res.render("subjects/maths/Male/math7", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/maths/male/math4');
+            return res.render('subjects/maths/Male/math4');
         }
     }
 });
-router.get("/subjects/maths/female/math7", (req, res) => {
+router.get("/subjects/maths/Female/math7", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/female/math7", {
+            return res.render("subjects/maths/Female/math7", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/maths/female/math4');
+            return res.render('subjects/maths/Female/math4');
         }
     }
 });
@@ -1945,27 +1945,27 @@ router.get("/subjects/economy/male/economy7", (req, res) => {
 
 
 //Teacher class 8
-router.get("/subjects/maths/male/math8", (req, res) => {
+router.get("/subjects/maths/Male/math8", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/male/math8", {
+            return res.render("subjects/maths/Male/math8", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/maths/male/math4');
+            return res.render('subjects/maths/Male/math4');
         }
     }
 });
-router.get("/subjects/maths/female/math8", (req, res) => {
+router.get("/subjects/maths/Female/math8", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/female/math8", {
+            return res.render("subjects/maths/Female/math8", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/maths/female/math4');
+            return res.render('subjects/maths/Female/math4');
         }
     }
 });
@@ -2249,27 +2249,27 @@ router.get("/subjects/economy/male/economy8", (req, res) => {
 
 
 //Teacher Class 9
-router.get("/subjects/maths/male/math9", (req, res) => {
+router.get("/subjects/maths/Male/math9", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/male/math9", {
+            return res.render("subjects/maths/Male/math9", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/maths/male/math4');
+            return res.render('subjects/maths/Male/math4');
         }
     }
 });
-router.get("/subjects/maths/female/math9", (req, res) => {
+router.get("/subjects/maths/Female/math9", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/female/math9", {
+            return res.render("subjects/maths/Female/math9", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/maths/female/math4');
+            return res.render('subjects/maths/Female/math4');
         }
     }
 });
@@ -2653,10 +2653,10 @@ router.get("/subjects/physics/male/physics9", (req, res) => {
 
 
 
-router.get("/subjects/maths/male/math10", (req, res) => {
+router.get("/subjects/maths/Male/math10", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/male/math10", {
+            return res.render("subjects/maths/Male/math10", {
                 teacher: "teacher"
             });
         }
@@ -2665,15 +2665,15 @@ router.get("/subjects/maths/male/math10", (req, res) => {
         }
     }
 });
-router.get("/subjects/maths/female/math10", (req, res) => {
+router.get("/subjects/maths/Female/math10", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/maths/female/math10", {
+            return res.render("subjects/maths/Female/math10", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/maths/female/math4');
+            return res.render('subjects/maths/Female/math4');
         }
     }
 });
