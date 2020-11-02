@@ -1587,10 +1587,10 @@ router.get("/subjects/history/Female/history6", (req, res) => {
     }
 });
 
-router.get("/subjects/geo/female/geo6", (req, res) => {
+router.get("/subjects/geo/Female/geo6", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/geo/female/geo6", {
+            return res.render("subjects/geo/Female/geo6", {
                 teacher: "teacher"
             });
         }
@@ -1866,10 +1866,10 @@ router.get("/subjects/history/Female/history7", (req, res) => {
     }
 });
 
-router.get("/subjects/geo/female/geo7", (req, res) => {
+router.get("/subjects/geo/Female/geo7", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/geo/female/geo7", {
+            return res.render("subjects/geo/Female/geo7", {
                 teacher: "teacher"
             });
         }
@@ -1916,10 +1916,10 @@ router.get("/subjects/nation/Female/nation7", (req, res) => {
     }
 });
 
-router.get("/subjects/economy/female/economy7", (req, res) => {
+router.get("/subjects/economy/Female/economy7", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/economy/female/economy7", {
+            return res.render("subjects/economy/Female/economy7", {
                 teacher: "teacher"
             });
         }
@@ -2170,10 +2170,10 @@ router.get("/subjects/history/Female/history8", (req, res) => {
     }
 });
 
-router.get("/subjects/geo/female/geo8", (req, res) => {
+router.get("/subjects/geo/Female/geo8", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/geo/female/geo8", {
+            return res.render("subjects/geo/Female/geo8", {
                 teacher: "teacher"
             });
         }
@@ -2220,10 +2220,10 @@ router.get("/subjects/nation/Female/nation8", (req, res) => {
     }
 });
 
-router.get("/subjects/economy/female/economy8", (req, res) => {
+router.get("/subjects/economy/Female/economy8", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/economy/female/economy8", {
+            return res.render("subjects/economy/Female/economy8", {
                 teacher: "teacher"
             });
         }
@@ -2474,10 +2474,10 @@ router.get("/subjects/history/Female/history9", (req, res) => {
     }
 });
 
-router.get("/subjects/geo/female/geo9", (req, res) => {
+router.get("/subjects/geo/Female/geo9", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/geo/female/geo9", {
+            return res.render("subjects/geo/Female/geo9", {
                 teacher: "teacher"
             });
         }
@@ -2524,10 +2524,10 @@ router.get("/subjects/nation/Female/nation9", (req, res) => {
     }
 });
 
-router.get("/subjects/economy/female/economy9", (req, res) => {
+router.get("/subjects/economy/Female/economy9", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/economy/female/economy9", {
+            return res.render("subjects/economy/Female/economy9", {
                 teacher: "teacher"
             });
         }
@@ -2878,10 +2878,10 @@ router.get("/subjects/history/Female/history10", (req, res) => {
     }
 });
 
-router.get("/subjects/geo/female/geo10", (req, res) => {
+router.get("/subjects/geo/Female/geo10", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/geo/female/geo10", {
+            return res.render("subjects/geo/Female/geo10", {
                 teacher: "teacher"
             });
         }
@@ -2929,10 +2929,10 @@ router.get("/subjects/nation/Female/nation10", (req, res) => {
 });
 
 
-router.get("/subjects/economy/female/economy10", (req, res) => {
+router.get("/subjects/economy/Female/economy10", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/economy/female/economy10", {
+            return res.render("subjects/economy/Female/economy10", {
                 teacher: "teacher"
             });
         }
