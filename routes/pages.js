@@ -2678,22 +2678,22 @@ router.get("/subjects/maths/female/math10", (req, res) => {
     }
 });
 
-router.get("/subjects/arabic/male/arabic10", (req, res) => {
+router.get("/subjects/arabic/Male/arabic10", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/arabic/male/arabic10", {
+            return res.render("subjects/arabic/Male/arabic10", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent() && req.user.isMale()) {
-            return res.render('subjects/arabic/male/arabic10');
+            return res.render('subjects/arabic/Male/arabic10');
         }
     }
 });
-router.get("/subjects/arabic/female/arabic10", (req, res) => {
+router.get("/subjects/arabic/Female/arabic10", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/arabic/female/arabic10", {
+            return res.render("subjects/arabic/Female/arabic10", {
                 teacher: "teacher"
             });
         }
@@ -3188,10 +3188,10 @@ router.get("/subjects/arabic/female/assign10", (req, res) => {
     }
 });
 
-router.get("/subjects/arabic/male/assign1", (req, res) => {
+router.get("/subjects/arabic/Male/assign1", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/arabic/male/assign1", {
+            return res.render("subjects/arabic/Male/assign1", {
                 teacher: "teacher"
             });
         }
@@ -3200,10 +3200,10 @@ router.get("/subjects/arabic/male/assign1", (req, res) => {
         }
     }
 });
-router.get("/subjects/arabic/male/assign2", (req, res) => {
+router.get("/subjects/arabic/Male/assign2", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/arabic/male/assign2", {
+            return res.render("subjects/arabic/Male/assign2", {
                 teacher: "teacher"
             });
         }
