@@ -419,10 +419,10 @@ router.get("/subjects/computer/Female/computer1", (req, res) => {
     }
 });
 
-router.get("/subjects/science/Female/scienceen1", (req, res) => {
+router.get("/subjects/science/Female/scienceEn1", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/science/Female/scienceen1", {
+            return res.render("subjects/science/Female/scienceEn1", {
                 teacher: "teacher"
             });
         }
@@ -431,10 +431,10 @@ router.get("/subjects/science/Female/scienceen1", (req, res) => {
         }
     }
 });
-router.get("/subjects/science/Male/scienceen1", (req, res) => {
+router.get("/subjects/science/Male/scienceEn1", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/science/Male/scienceen1", {
+            return res.render("subjects/science/Male/scienceEn1", {
                 teacher: "teacher"
             });
         }
@@ -646,10 +646,10 @@ router.get("/subjects/computer/Female/computer2", (req, res) => {
     }
 });
 
-router.get("/subjects/science/Female/scienceen2", (req, res) => {
+router.get("/subjects/science/Female/scienceEn2", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/science/Female/scienceen2", {
+            return res.render("subjects/science/Female/scienceEn2", {
                 teacher: "teacher"
             });
         }
@@ -658,10 +658,10 @@ router.get("/subjects/science/Female/scienceen2", (req, res) => {
         }
     }
 });
-router.get("/subjects/science/Male/scienceen2", (req, res) => {
+router.get("/subjects/science/Male/scienceEn2", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/science/Male/scienceen2", {
+            return res.render("subjects/science/Male/scienceEn2", {
                 teacher: "teacher"
             });
         }
@@ -874,10 +874,10 @@ router.get("/subjects/computer/Female/computer3", (req, res) => {
     }
 });
 
-router.get("/subjects/science/Female/scienceen3", (req, res) => {
+router.get("/subjects/science/Female/scienceEn3", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/science/Female/scienceen3", {
+            return res.render("subjects/science/Female/scienceEn3", {
                 teacher: "teacher"
             });
         }
@@ -886,10 +886,10 @@ router.get("/subjects/science/Female/scienceen3", (req, res) => {
         }
     }
 });
-router.get("/subjects/science/Male/scienceen3", (req, res) => {
+router.get("/subjects/science/Male/scienceEn3", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/science/Male/scienceen3", {
+            return res.render("subjects/science/Male/scienceEn3", {
                 teacher: "teacher"
             });
         }
