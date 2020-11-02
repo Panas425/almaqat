@@ -369,10 +369,10 @@ router.get("/subjects/science/female/science1", (req, res) => {
     }
 });
 
-router.get("/subjects/islam/female/islam1", (req, res) => {
+router.get("/subjects/islam/Female/islam1", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/female/islam1", {
+            return res.render("subjects/islam/Female/islam1", {
                 teacher: "teacher"
             });
         }
@@ -381,10 +381,10 @@ router.get("/subjects/islam/female/islam1", (req, res) => {
         }
     }
 });
-router.get("/subjects/islam/male/islam1", (req, res) => {
+router.get("/subjects/islam/Male/islam1", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/male/islam1", {
+            return res.render("subjects/islam/Male/islam1", {
                 teacher: "teacher"
             });
         }
@@ -596,10 +596,10 @@ router.get("/subjects/science/female/science2", (req, res) => {
     }
 });
 
-router.get("/subjects/islam/female/islam2", (req, res) => {
+router.get("/subjects/islam/Female/islam2", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/female/islam2", {
+            return res.render("subjects/islam/Female/islam2", {
                 teacher: "teacher"
             });
         }
@@ -608,10 +608,10 @@ router.get("/subjects/islam/female/islam2", (req, res) => {
         }
     }
 });
-router.get("/subjects/islam/male/islam2", (req, res) => {
+router.get("/subjects/islam/Male/islam2", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/male/islam2", {
+            return res.render("subjects/islam/Male/islam2", {
                 teacher: "teacher"
             });
         }
@@ -824,10 +824,10 @@ router.get("/subjects/science/female/science3", (req, res) => {
     }
 });
 
-router.get("/subjects/islam/female/islam3", (req, res) => {
+router.get("/subjects/islam/Female/islam3", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/female/islam3", {
+            return res.render("subjects/islam/Female/islam3", {
                 teacher: "teacher"
             });
         }
@@ -836,10 +836,10 @@ router.get("/subjects/islam/female/islam3", (req, res) => {
         }
     }
 });
-router.get("/subjects/islam/male/islam3", (req, res) => {
+router.get("/subjects/islam/Male/islam3", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/male/islam3", {
+            return res.render("subjects/islam/Male/islam3", {
                 teacher: "teacher"
             });
         }
@@ -1078,10 +1078,10 @@ router.get("/subjects/english/Female/english4", (req, res) => {
     }
 });
 
-router.get("/subjects/islam/male/islam4", (req, res) => {
+router.get("/subjects/islam/Male/islam4", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/male/islam4", {
+            return res.render("subjects/islam/Male/islam4", {
                 teacher: "teacher"
             });
         }
@@ -1090,10 +1090,10 @@ router.get("/subjects/islam/male/islam4", (req, res) => {
         }
     }
 });
-router.get("/subjects/islam/female/islam4", (req, res) => {
+router.get("/subjects/islam/Female/islam4", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/female/islam4", {
+            return res.render("subjects/islam/Female/islam4", {
                 teacher: "teacher"
             });
         }
@@ -1283,10 +1283,10 @@ router.get("/subjects/english/Female/english5", (req, res) => {
     }
 });
 
-router.get("/subjects/islam/male/islam5", (req, res) => {
+router.get("/subjects/islam/Male/islam5", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/male/islam5", {
+            return res.render("subjects/islam/Male/islam5", {
                 teacher: "teacher"
             });
         }
@@ -1295,10 +1295,10 @@ router.get("/subjects/islam/male/islam5", (req, res) => {
         }
     }
 });
-router.get("/subjects/islam/female/islam5", (req, res) => {
+router.get("/subjects/islam/Female/islam5", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/female/islam5", {
+            return res.render("subjects/islam/Female/islam5", {
                 teacher: "teacher"
             });
         }
@@ -1487,10 +1487,10 @@ router.get("/subjects/english/Female/english6", (req, res) => {
     }
 });
 
-router.get("/subjects/islam/male/islam6", (req, res) => {
+router.get("/subjects/islam/Male/islam6", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/male/islam6", {
+            return res.render("subjects/islam/Male/islam6", {
                 teacher: "teacher"
             });
         }
@@ -1499,10 +1499,10 @@ router.get("/subjects/islam/male/islam6", (req, res) => {
         }
     }
 });
-router.get("/subjects/islam/female/islam6", (req, res) => {
+router.get("/subjects/islam/Female/islam6", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/female/islam6", {
+            return res.render("subjects/islam/Female/islam6", {
                 teacher: "teacher"
             });
         }
@@ -1766,10 +1766,10 @@ router.get("/subjects/english/Female/english7", (req, res) => {
     }
 });
 
-router.get("/subjects/islam/male/islam7", (req, res) => {
+router.get("/subjects/islam/Male/islam7", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/male/islam7", {
+            return res.render("subjects/islam/Male/islam7", {
                 teacher: "teacher"
             });
         }
@@ -1778,10 +1778,10 @@ router.get("/subjects/islam/male/islam7", (req, res) => {
         }
     }
 });
-router.get("/subjects/islam/female/islam7", (req, res) => {
+router.get("/subjects/islam/Female/islam7", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/female/islam7", {
+            return res.render("subjects/islam/Female/islam7", {
                 teacher: "teacher"
             });
         }
@@ -2070,10 +2070,10 @@ router.get("/subjects/english/Female/english8", (req, res) => {
     }
 });
 
-router.get("/subjects/islam/male/islam8", (req, res) => {
+router.get("/subjects/islam/Male/islam8", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/male/islam8", {
+            return res.render("subjects/islam/Male/islam8", {
                 teacher: "teacher"
             });
         }
@@ -2082,10 +2082,10 @@ router.get("/subjects/islam/male/islam8", (req, res) => {
         }
     }
 });
-router.get("/subjects/islam/female/islam8", (req, res) => {
+router.get("/subjects/islam/Female/islam8", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/female/islam8", {
+            return res.render("subjects/islam/Female/islam8", {
                 teacher: "teacher"
             });
         }
@@ -2374,10 +2374,10 @@ router.get("/subjects/english/Female/english9", (req, res) => {
     }
 });
 
-router.get("/subjects/islam/male/islam9", (req, res) => {
+router.get("/subjects/islam/Male/islam9", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/male/islam9", {
+            return res.render("subjects/islam/Male/islam9", {
                 teacher: "teacher"
             });
         }
@@ -2386,10 +2386,10 @@ router.get("/subjects/islam/male/islam9", (req, res) => {
         }
     }
 });
-router.get("/subjects/islam/female/islam9", (req, res) => {
+router.get("/subjects/islam/Female/islam9", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/female/islam9", {
+            return res.render("subjects/islam/Female/islam9", {
                 teacher: "teacher"
             });
         }
@@ -2778,10 +2778,10 @@ router.get("/subjects/english/Female/english10", (req, res) => {
     }
 });
 
-router.get("/subjects/islam/male/islam10", (req, res) => {
+router.get("/subjects/islam/Male/islam10", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/male/islam10", {
+            return res.render("subjects/islam/Male/islam10", {
                 teacher: "teacher"
             });
         }
@@ -2790,10 +2790,10 @@ router.get("/subjects/islam/male/islam10", (req, res) => {
         }
     }
 });
-router.get("/subjects/islam/female/islam10", (req, res) => {
+router.get("/subjects/islam/Female/islam10", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/islam/female/islam10", {
+            return res.render("subjects/islam/Female/islam10", {
                 teacher: "teacher"
             });
         }
