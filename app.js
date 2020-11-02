@@ -11,7 +11,7 @@ const passport = require("passport");
 const expressLayouts = require('express-ejs-layouts');
 const methodOverride = require('method-override');
 const http = require('http');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 
 
