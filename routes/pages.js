@@ -1624,10 +1624,10 @@ router.get("/subjects/nation/male/nation6", (req, res) => {
         }
     }
 });
-router.get("/subjects/nation/female/nation6", (req, res) => {
+router.get("/subjects/nation/Female/nation6", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/nation/female/nation6", {
+            return res.render("subjects/nation/Female/nation6", {
                 teacher: "teacher"
             });
         }
@@ -1903,10 +1903,10 @@ router.get("/subjects/nation/male/nation7", (req, res) => {
         }
     }
 });
-router.get("/subjects/nation/female/nation7", (req, res) => {
+router.get("/subjects/nation/Female/nation7", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/nation/female/nation7", {
+            return res.render("subjects/nation/Female/nation7", {
                 teacher: "teacher"
             });
         }
@@ -2207,10 +2207,10 @@ router.get("/subjects/nation/male/nation8", (req, res) => {
         }
     }
 });
-router.get("/subjects/nation/female/nation8", (req, res) => {
+router.get("/subjects/nation/Female/nation8", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/nation/female/nation8", {
+            return res.render("subjects/nation/Female/nation8", {
                 teacher: "teacher"
             });
         }
@@ -2511,10 +2511,10 @@ router.get("/subjects/nation/male/nation9", (req, res) => {
         }
     }
 });
-router.get("/subjects/nation/female/nation9", (req, res) => {
+router.get("/subjects/nation/Female/nation9", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/nation/female/nation9", {
+            return res.render("subjects/nation/Female/nation9", {
                 teacher: "teacher"
             });
         }
@@ -2915,10 +2915,10 @@ router.get("/subjects/nation/male/nation10", (req, res) => {
         }
     }
 });
-router.get("/subjects/nation/female/nation10", (req, res) => {
+router.get("/subjects/nation/Female/nation10", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/nation/female/nation10", {
+            return res.render("subjects/nation/Female/nation10", {
                 teacher: "teacher"
             });
         }
