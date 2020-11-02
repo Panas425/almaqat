@@ -2928,6 +2928,19 @@ router.get("/subjects/nation/female/nation10", (req, res) => {
     }
 });
 
+router.get("/subjects/nation/female/nation10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/nation/female/nation10", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/nation/male/vocational4');
+        }
+    }
+});
+
 router.get("/subjects/economy/female/economy10", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
