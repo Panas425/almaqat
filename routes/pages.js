@@ -1574,10 +1574,10 @@ router.get("/subjects/history/male/history6", (req, res) => {
         }
     }
 });
-router.get("/subjects/history/female/history6", (req, res) => {
+router.get("/subjects/history/Female/history6", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/history/female/history6", {
+            return res.render("subjects/history/Female/history6", {
                 teacher: "teacher"
             });
         }
@@ -1853,10 +1853,10 @@ router.get("/subjects/history/male/history7", (req, res) => {
         }
     }
 });
-router.get("/subjects/history/female/history7", (req, res) => {
+router.get("/subjects/history/Female/history7", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/history/female/history7", {
+            return res.render("subjects/history/Female/history7", {
                 teacher: "teacher"
             });
         }
@@ -2157,10 +2157,10 @@ router.get("/subjects/history/male/history8", (req, res) => {
         }
     }
 });
-router.get("/subjects/history/female/history8", (req, res) => {
+router.get("/subjects/history/Female/history8", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/history/female/history8", {
+            return res.render("subjects/history/Female/history8", {
                 teacher: "teacher"
             });
         }
@@ -2461,10 +2461,10 @@ router.get("/subjects/history/male/history9", (req, res) => {
         }
     }
 });
-router.get("/subjects/history/female/history9", (req, res) => {
+router.get("/subjects/history/Female/history9", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/history/female/history9", {
+            return res.render("subjects/history/Female/history9", {
                 teacher: "teacher"
             });
         }
@@ -2865,10 +2865,10 @@ router.get("/subjects/history/male/history10", (req, res) => {
         }
     }
 });
-router.get("/subjects/history/female/history10", (req, res) => {
+router.get("/subjects/history/Female/history10", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/history/female/history10", {
+            return res.render("subjects/history/Female/history10", {
                 teacher: "teacher"
             });
         }
