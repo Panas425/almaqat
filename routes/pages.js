@@ -2561,10 +2561,10 @@ router.get("/subjects/earth_science/male/earthscience9", (req, res) => {
         }
     }
 });
-router.get("/subjects/earth_science/female/earthscience9", (req, res) => {
+router.get("/subjects/earth_science/Female/earthscience9", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/earth_science/female/earthscience9", {
+            return res.render("subjects/earth_science/Female/earthscience9", {
                 teacher: "teacher"
             });
         }
@@ -2966,10 +2966,10 @@ router.get("/subjects/earth_science/male/earthscience10", (req, res) => {
         }
     }
 });
-router.get("/subjects/earth_science/female/earthscience10", (req, res) => {
+router.get("/subjects/earth_science/Female/earthscience10", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/earth_science/female/earthscience10", {
+            return res.render("subjects/earth_science/Female/earthscience10", {
                 teacher: "teacher"
             });
         }
