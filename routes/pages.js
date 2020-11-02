@@ -319,10 +319,10 @@ router.get("/subjects/arabic/Female/arabic1", (req, res) => {
     }
 });
 
-router.get("/subjects/sociology/female/sociology1", (req, res) => {
+router.get("/subjects/sociology/Female/sociology1", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/female/sociology1", {
+            return res.render("subjects/sociology/Female/sociology1", {
                 teacher: "teacher"
             });
         }
@@ -331,10 +331,10 @@ router.get("/subjects/sociology/female/sociology1", (req, res) => {
         }
     }
 });
-router.get("/subjects/sociology/male/sociology1", (req, res) => {
+router.get("/subjects/sociology/Male/sociology1", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/male/sociology1", {
+            return res.render("subjects/sociology/Male/sociology1", {
                 teacher: "teacher"
             });
         }
@@ -546,10 +546,10 @@ router.get("/subjects/arabic/Female/arabic2", (req, res) => {
     }
 });
 
-router.get("/subjects/sociology/female/sociology2", (req, res) => {
+router.get("/subjects/sociology/Female/sociology2", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/female/sociology2", {
+            return res.render("subjects/sociology/Female/sociology2", {
                 teacher: "teacher"
             });
         }
@@ -558,10 +558,10 @@ router.get("/subjects/sociology/female/sociology2", (req, res) => {
         }
     }
 });
-router.get("/subjects/sociology/male/sociology2", (req, res) => {
+router.get("/subjects/sociology/Male/sociology2", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/male/sociology2", {
+            return res.render("subjects/sociology/Male/sociology2", {
                 teacher: "teacher"
             });
         }
@@ -774,10 +774,10 @@ router.get("/subjects/arabic/Female/arabic3", (req, res) => {
     }
 });
 
-router.get("/subjects/sociology/female/sociology3", (req, res) => {
+router.get("/subjects/sociology/Female/sociology3", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/female/sociology3", {
+            return res.render("subjects/sociology/Female/sociology3", {
                 teacher: "teacher"
             });
         }
@@ -786,10 +786,10 @@ router.get("/subjects/sociology/female/sociology3", (req, res) => {
         }
     }
 });
-router.get("/subjects/sociology/male/sociology3", (req, res) => {
+router.get("/subjects/sociology/Male/sociology3", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/male/sociology3", {
+            return res.render("subjects/sociology/Male/sociology3", {
                 teacher: "teacher"
             });
         }
@@ -1103,10 +1103,10 @@ router.get("/subjects/islam/Female/islam4", (req, res) => {
     }
 });
 
-router.get("/subjects/sociology/male/sociology4", (req, res) => {
+router.get("/subjects/sociology/Male/sociology4", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/male/sociology4", {
+            return res.render("subjects/sociology/Male/sociology4", {
                 teacher: "teacher"
             });
         }
@@ -1115,10 +1115,10 @@ router.get("/subjects/sociology/male/sociology4", (req, res) => {
         }
     }
 });
-router.get("/subjects/sociology/female/sociology4", (req, res) => {
+router.get("/subjects/sociology/Female/sociology4", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/female/sociology4", {
+            return res.render("subjects/sociology/Female/sociology4", {
                 teacher: "teacher"
             });
         }
@@ -1128,15 +1128,15 @@ router.get("/subjects/sociology/female/sociology4", (req, res) => {
     }
 });
 
-router.get("/subjects/vocational/female/vocational4", (req, res) => {
+router.get("/subjects/vocational/Female/vocational4", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/vocational/female/vocational4", {
+            return res.render("subjects/vocational/Female/vocational4", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/vocational/female/vocational4');
+            return res.render('subjects/vocational/Female/vocational4');
         }
     }
 });
@@ -1308,10 +1308,10 @@ router.get("/subjects/islam/Female/islam5", (req, res) => {
     }
 });
 
-router.get("/subjects/sociology/male/sociology5", (req, res) => {
+router.get("/subjects/sociology/Male/sociology5", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/male/sociology5", {
+            return res.render("subjects/sociology/Male/sociology5", {
                 teacher: "teacher"
             });
         }
@@ -1320,10 +1320,10 @@ router.get("/subjects/sociology/male/sociology5", (req, res) => {
         }
     }
 });
-router.get("/subjects/sociology/female/sociology5", (req, res) => {
+router.get("/subjects/sociology/Female/sociology5", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/female/sociology5", {
+            return res.render("subjects/sociology/Female/sociology5", {
                 teacher: "teacher"
             });
         }
@@ -1333,15 +1333,15 @@ router.get("/subjects/sociology/female/sociology5", (req, res) => {
     }
 });
 
-router.get("/subjects/vocational/female/vocational5", (req, res) => {
+router.get("/subjects/vocational/Female/vocational5", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/vocational/female/vocational5", {
+            return res.render("subjects/vocational/Female/vocational5", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/vocational/female/vocational4');
+            return res.render('subjects/vocational/Female/vocational4');
         }
     }
 });
@@ -1512,10 +1512,10 @@ router.get("/subjects/islam/Female/islam6", (req, res) => {
     }
 });
 
-router.get("/subjects/sociology/male/sociology6", (req, res) => {
+router.get("/subjects/sociology/Male/sociology6", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/male/sociology6", {
+            return res.render("subjects/sociology/Male/sociology6", {
                 teacher: "teacher"
             });
         }
@@ -1524,10 +1524,10 @@ router.get("/subjects/sociology/male/sociology6", (req, res) => {
         }
     }
 });
-router.get("/subjects/sociology/female/sociology6", (req, res) => {
+router.get("/subjects/sociology/Female/sociology6", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/female/sociology6", {
+            return res.render("subjects/sociology/Female/sociology6", {
                 teacher: "teacher"
             });
         }
@@ -1537,15 +1537,15 @@ router.get("/subjects/sociology/female/sociology6", (req, res) => {
     }
 });
 
-router.get("/subjects/vocational/female/vocational6", (req, res) => {
+router.get("/subjects/vocational/Female/vocational6", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/vocational/female/vocational6", {
+            return res.render("subjects/vocational/Female/vocational6", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/vocational/female/vocational4');
+            return res.render('subjects/vocational/Female/vocational4');
         }
     }
 });
@@ -1791,10 +1791,10 @@ router.get("/subjects/islam/Female/islam7", (req, res) => {
     }
 });
 
-router.get("/subjects/sociology/male/sociology7", (req, res) => {
+router.get("/subjects/sociology/Male/sociology7", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/male/sociology7", {
+            return res.render("subjects/sociology/Male/sociology7", {
                 teacher: "teacher"
             });
         }
@@ -1803,10 +1803,10 @@ router.get("/subjects/sociology/male/sociology7", (req, res) => {
         }
     }
 });
-router.get("/subjects/sociology/female/sociology7", (req, res) => {
+router.get("/subjects/sociology/Female/sociology7", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/female/sociology7", {
+            return res.render("subjects/sociology/Female/sociology7", {
                 teacher: "teacher"
             });
         }
@@ -1816,15 +1816,15 @@ router.get("/subjects/sociology/female/sociology7", (req, res) => {
     }
 });
 
-router.get("/subjects/vocational/female/vocational7", (req, res) => {
+router.get("/subjects/vocational/Female/vocational7", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/vocational/female/vocational7", {
+            return res.render("subjects/vocational/Female/vocational7", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/vocational/female/vocational4');
+            return res.render('subjects/vocational/Female/vocational4');
         }
     }
 });
@@ -2095,10 +2095,10 @@ router.get("/subjects/islam/Female/islam8", (req, res) => {
     }
 });
 
-router.get("/subjects/sociology/male/sociology8", (req, res) => {
+router.get("/subjects/sociology/Male/sociology8", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/male/sociology8", {
+            return res.render("subjects/sociology/Male/sociology8", {
                 teacher: "teacher"
             });
         }
@@ -2107,10 +2107,10 @@ router.get("/subjects/sociology/male/sociology8", (req, res) => {
         }
     }
 });
-router.get("/subjects/sociology/female/sociology8", (req, res) => {
+router.get("/subjects/sociology/Female/sociology8", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/female/sociology8", {
+            return res.render("subjects/sociology/Female/sociology8", {
                 teacher: "teacher"
             });
         }
@@ -2120,15 +2120,15 @@ router.get("/subjects/sociology/female/sociology8", (req, res) => {
     }
 });
 
-router.get("/subjects/vocational/female/vocational8", (req, res) => {
+router.get("/subjects/vocational/Female/vocational8", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/vocational/female/vocational8", {
+            return res.render("subjects/vocational/Female/vocational8", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/vocational/female/vocational4');
+            return res.render('subjects/vocational/Female/vocational4');
         }
     }
 });
@@ -2399,10 +2399,10 @@ router.get("/subjects/islam/Female/islam9", (req, res) => {
     }
 });
 
-router.get("/subjects/sociology/male/sociology9", (req, res) => {
+router.get("/subjects/sociology/Male/sociology9", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/male/sociology9", {
+            return res.render("subjects/sociology/Male/sociology9", {
                 teacher: "teacher"
             });
         }
@@ -2411,10 +2411,10 @@ router.get("/subjects/sociology/male/sociology9", (req, res) => {
         }
     }
 });
-router.get("/subjects/sociology/female/sociology9", (req, res) => {
+router.get("/subjects/sociology/Female/sociology9", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/female/sociology9", {
+            return res.render("subjects/sociology/Female/sociology9", {
                 teacher: "teacher"
             });
         }
@@ -2424,15 +2424,15 @@ router.get("/subjects/sociology/female/sociology9", (req, res) => {
     }
 });
 
-router.get("/subjects/vocational/female/vocational9", (req, res) => {
+router.get("/subjects/vocational/Female/vocational9", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/vocational/female/vocational9", {
+            return res.render("subjects/vocational/Female/vocational9", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/vocational/female/vocational4');
+            return res.render('subjects/vocational/Female/vocational4');
         }
     }
 });
@@ -2803,22 +2803,22 @@ router.get("/subjects/islam/Female/islam10", (req, res) => {
     }
 });
 
-router.get("/subjects/sociology/male/sociology10", (req, res) => {
+router.get("/subjects/sociology/Male/sociology10", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/male/sociology10", {
+            return res.render("subjects/sociology/Male/sociology10", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/sociology/male/sociology10');
+            return res.render('subjects/sociology/Male/sociology10');
         }
     }
 });
-router.get("/subjects/sociology/female/sociology10", (req, res) => {
+router.get("/subjects/sociology/Female/sociology10", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/sociology/female/sociology10", {
+            return res.render("subjects/sociology/Female/sociology10", {
                 teacher: "teacher"
             });
         }
@@ -2828,15 +2828,15 @@ router.get("/subjects/sociology/female/sociology10", (req, res) => {
     }
 });
 
-router.get("/subjects/vocational/female/vocational10", (req, res) => {
+router.get("/subjects/vocational/Female/vocational10", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
-            return res.render("subjects/vocational/female/vocational10", {
+            return res.render("subjects/vocational/Female/vocational10", {
                 teacher: "teacher"
             });
         }
         else if (req.user.isStudent()) {
-            return res.render('subjects/vocational/female/vocational4');
+            return res.render('subjects/vocational/Female/vocational4');
         }
     }
 });
