@@ -16,8 +16,8 @@
 
         <nav class="navSubject">
 
-            <a href="/subject">الصفحة الرئيسية</a>
-            <a href="/assignments">الواجبات</a>
+            <a href="/subjects/english/Male/english4">الصفحة الرئيسية</a>
+            <a href="/subjects/english/Male/assign4">الواجبات</a>
             <a href="/aboutSchool">الاشخاص</a>
             <a href="/auth/logout">الخروج</a>
 
@@ -56,8 +56,8 @@
         }
 
         function getVal() {
-            var englishMsg4 = document.getElementById('inputtext').value;
-            const data = { englishMsg4 };
+            var englishMsg4b = document.getElementById('inputtext').value;
+            const data = { englishMsg4b };
             const options = {
                 method: 'POST',
                 headers: {
@@ -86,7 +86,7 @@
             });
 
             for (item of data) {
-                if (item.englishMsg4) {
+                if (item.englishMsg4b) {
                     const root = document.createElement('div');
                     const date = document.createElement('div');
                     const txt = document.createElement('textarea');
@@ -101,7 +101,7 @@
                     date.style.color = "white";
 
 
-                    txt.textContent = `${item.englishMsg4}`;
+                    txt.textContent = `${item.englishMsg4b}`;
                     const dateString = new Date(item.timestamp).toLocaleString();
                     date.textContent = dateString;
 

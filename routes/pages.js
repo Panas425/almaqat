@@ -268,7 +268,7 @@ router.get("/classes/class10", (req, res) => {
 });
 
 
-//teacher class 1
+//class 1
 router.get("/subjects/maths/Male/math1", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
@@ -495,7 +495,7 @@ router.get("/subjects/english/Male/english1", (req, res) => {
 });
 
 
-//Teacher class 2
+//class 2
 router.get("/subjects/maths/Male/math2", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
@@ -723,7 +723,7 @@ router.get("/subjects/english/Male/english2", (req, res) => {
 
 
 
-//teacher class 3
+//class 3
 router.get("/subjects/maths/Male/math3", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
@@ -952,7 +952,7 @@ router.get("/subjects/english/Male/english3", (req, res) => {
 
 
 
-//teacher class 4
+//class 4
 router.get("/subjects/maths/Male/math4", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
@@ -1157,7 +1157,7 @@ router.get("/subjects/vocational/male/vocational4", (req, res) => {
 
 
 
-//Teacher class 5
+//class 5
 router.get("/subjects/maths/Male/math5", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
@@ -1361,7 +1361,7 @@ router.get("/subjects/vocational/male/vocational5", (req, res) => {
 
 
 
-//Teacher class 6
+//class 6
 router.get("/subjects/maths/Male/math6", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
@@ -1640,7 +1640,7 @@ router.get("/subjects/nation/Female/nation6", (req, res) => {
 
 
 
-//Teacher class 7
+//class 7
 router.get("/subjects/maths/Male/math7", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
@@ -1944,7 +1944,7 @@ router.get("/subjects/economy/male/economy7", (req, res) => {
 
 
 
-//Teacher class 8
+//class 8
 router.get("/subjects/maths/Male/math8", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
@@ -2248,7 +2248,7 @@ router.get("/subjects/economy/male/economy8", (req, res) => {
 
 
 
-//Teacher Class 9
+//Class 9
 router.get("/subjects/maths/Male/math9", (req, res) => {
     if (req.isAuthenticated()) {
         if (req.user.isTeacher()) {
@@ -3651,14 +3651,2072 @@ router.get("/subjects/computer/Male/assign10", (req, res) => {
     }
 });
 
+router.get("/subjects/earth_science/Female/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/earth_science/Female/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/earth_science/Female/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/earth_science/Female/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/earth_science/male/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/earth_science/male/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/earth_science/male/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/earth_science/male/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+router.get("/subjects/economy/male/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/economy/male/assign7", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/economy/male/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/economy/male/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/economy/male/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/economy/male/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/economy/male/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/economy/male/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+router.get("/subjects/economy/Female/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/economy/Female/assign7", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/economy/Female/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/economy/Female/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/economy/Female/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/economy/Female/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/economy/Female/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/economy/Female/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+
+router.get("/subjects/english/Male/assign1", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Male/assign1", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Male/assign2", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Male/assign2", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Male/assign3", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Male/assign3", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Male/assign4", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Male/assign4", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Male/assign5", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Male/assign5", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Male/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Male/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Male/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Male/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Male/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Male/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Male/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Male/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Male/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Male/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+
+
+router.get("/subjects/english/Female/assign1", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Female/assign1", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Female/assign2", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Female/assign2", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/Female/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Female/assign3", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Female/assign3", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Female/assign4", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Female/assign4", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Female/assign5", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Female/assign5", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Female/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Female/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Female/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Female/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Female/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Female/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Female/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Female/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/english/Female/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/english/Female/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+
+
+router.get("/subjects/geo/Female/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/geo/Female/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/geo/Female/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/geo/Female/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/geo/Female/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/geo/Female/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/geo/Female/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/geo/Female/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/geo/Female/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/geo/Female/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+
+router.get("/subjects/geo/male/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/geo/male/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/geo/male/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/geo/male/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/geo/male/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/geo/male/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/geo/male/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/geo/male/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/geo/male/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/geo/male/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+
+router.get("/subjects/history/Female/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/history/Female/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/history/Female/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/history/Female/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/history/Female/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/history/Female/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/history/Female/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/history/Female/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/history/Female/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/history/Female/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+
+router.get("/subjects/history/male/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/history/male/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/history/male/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/history/male/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/history/male/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/history/male/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/history/male/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/history/male/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/history/male/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/history/male/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+
+
+router.get("/subjects/islam/Male/assign1", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Male/assign1", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Male/assign2", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Male/assign2", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Male/assign3", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Male/assign3", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Male/assign4", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Male/assign4", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Male/assign5", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Male/assign5", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Male/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Male/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Male/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Male/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Male/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Male/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Male/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Male/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Male/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Male/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+
+router.get("/subjects/islam/Female/assign1", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Female/assign1", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Female/assign2", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Female/assign2", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/Female/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Female/assign3", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Female/assign3", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Female/assign4", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Female/assign4", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Female/assign5", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Female/assign5", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Female/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Female/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Female/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Female/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Female/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Female/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Female/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Female/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/islam/Female/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/islam/Female/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+
+router.get("/subjects/maths/Male/assign1", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Male/assign1", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Male/assign2", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Male/assign2", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Male/assign3", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Male/assign3", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Male/assign4", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Male/assign4", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Male/assign5", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Male/assign5", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Male/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Male/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Male/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Male/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Male/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Male/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Male/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Male/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Male/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Male/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Male/assignen1", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Male/assignen1", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Male/assignen2", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Male/assignen2", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Male/assignen3", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Male/assignen3", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+
+router.get("/subjects/maths/Female/assign1", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Female/assign1", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Female/assign2", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Female/assign2", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/Female/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Female/assign3", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Female/assign3", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Female/assign4", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Female/assign4", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Female/assign5", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Female/assign5", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Female/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Female/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Female/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Female/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Female/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Female/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Female/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Female/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Female/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Female/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Female/assignen1", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Female/assignen1", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Female/assignen2", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Female/assignen2", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/maths/Female/assignen3", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/maths/Female/assignen3", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+
+
+router.get("/subjects/nation/Female/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/nation/Female/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/nation/Female/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/nation/Female/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/nation/Female/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/nation/Female/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/nation/Female/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/nation/Female/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/nation/Female/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/nation/Female/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+
+router.get("/subjects/nation/male/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/nation/male/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/nation/male/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/nation/male/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/nation/male/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/nation/male/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/nation/male/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/nation/male/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/nation/male/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/nation/male/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
 
 
 
 
+router.get("/subjects/science/Male/assign1", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Male/assign1", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Male/assign2", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Male/assign2", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Male/assign3", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Male/assign3", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Male/assign4", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Male/assign4", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Male/assign5", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Male/assign5", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Male/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Male/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Male/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Male/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Male/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Male/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Male/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Male/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Male/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Male/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Male/assignen1", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Male/assignen1", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Male/assignen2", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Male/assignen2", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Male/assignen3", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Male/assignen3", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
 
 
 
+router.get("/subjects/science/Female/assign1", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Female/assign1", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Female/assign2", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Female/assign2", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/Female/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Female/assign3", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Female/assign3", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Female/assign4", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Female/assign4", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Female/assign5", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Female/assign5", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Female/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Female/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Female/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Female/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Female/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Female/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Female/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Female/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Female/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Female/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Female/assignen1", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Female/assignen1", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Female/assignen2", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Female/assignen2", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/science/Female/assignen3", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/science/Female/assignen3", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
 
+
+
+router.get("/subjects/sociology/Female/assign1", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/sociology/Female/assign1", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/sociology/Female/assign2", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/sociology/Female/assign2", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/Female/physics10');
+        }
+    }
+});
+router.get("/subjects/sociology/Female/assign3", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/sociology/Female/assign3", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/sociology/Female/assign4", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/sociology/Female/assign4", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/sociology/Female/assign5", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/sociology/Female/assign5", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/sociology/Female/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/sociology/Female/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/sociology/Female/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/sociology/Female/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/sociology/Female/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/sociology/Female/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+
+router.get("/subjects/sociology/Male/assign1", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/sociology/Male/assign1", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/sociology/Male/assign2", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/sociology/Male/assign2", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/Female/physics10');
+        }
+    }
+});
+router.get("/subjects/sociology/Male/assign3", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/sociology/Male/assign3", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/sociology/Male/assign4", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/sociology/Male/assign4", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/sociology/Male/assign5", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/sociology/Male/assign5", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/sociology/Male/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/sociology/Male/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/sociology/Male/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/sociology/Male/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/sociology/Male/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/sociology/Male/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+
+router.get("/subjects/vocational/Female/assign4", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/vocational/Female/assign4", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/vocational/Female/assign5", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/vocational/Female/assign5", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/vocational/Female/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/vocational/Female/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/vocational/Female/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/vocational/Female/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/vocational/Female/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/vocational/Female/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/vocational/Female/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/vocational/Female/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/vocational/Female/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/vocational/Female/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+
+router.get("/subjects/vocational/male/assign4", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/vocational/male/assign4", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/vocational/male/assign5", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/vocational/male/assign5", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/vocational/male/assign6", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/vocational/male/assign6", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/vocational/male/assign7", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/vocational/male/assign7", {
+                teacher: "teacher"
+            });
+        }
+        else if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/vocational/male/assign8", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/vocational/male/assign8", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/vocational/male/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/vocational/male/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/vocational/male/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/vocational/male/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+
+router.get("/subjects/physics/male/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/physics/male/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/physics/male/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/physics/male/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+
+
+router.get("/subjects/physics/female/assign9", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/physics/female/assign9", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
+router.get("/subjects/physics/female/assign10", (req, res) => {
+    if (req.isAuthenticated()) {
+        if (req.user.isTeacher()) {
+            return res.render("subjects/physics/female/assign10", {
+                teacher: "teacher"
+            });
+        }
+        if (req.user.isStudent()) {
+            return res.render('subjects/physics/male/physics10');
+        }
+    }
+});
 
 
 //if(persons.some(person => person.name === "Peter"))

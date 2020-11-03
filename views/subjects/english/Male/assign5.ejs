@@ -16,8 +16,8 @@
 
         <nav class="navSubject">
 
-            <a href="/subject">الصفحة الرئيسية</a>
-            <a href="/assignments">الواجبات</a>
+            <a href="/subjects/english/Male/english5">الصفحة الرئيسية</a>
+            <a href="/subjects/english/Male/assign5">الواجبات</a>
             <a href="/aboutSchool">الاشخاص</a>
             <a href="/auth/logout">الخروج</a>
 
@@ -31,7 +31,7 @@
 
         </div>
 
-        <form action="/assignments" id="inputForm" style="display: none;">
+        <form action="/subjects/english/Male/assign5" id="inputForm" style="display: none;">
             <div class="inputDiv" id="inputDiv">
                 <textarea class="form-control" id="inputtext" name="inputtext" rows="6"></textarea>
                 <label for="uploadLink">Upload Link</label>
@@ -72,10 +72,10 @@
             }
         }
         function getVal() {
-            window.location.href = "/assignments";
-            var txtAsgn = document.getElementById('inputtext').value;
-            var uploadLink = document.getElementById('uploadLink').value;
-            const data = { txtAsgn, uploadLink };
+            window.location.href = "/subjects/english/Male/assign5";
+            var enA5b = document.getElementById('inputtext').value;
+            var enL5b = document.getElementById('uploadLink').value;
+            const data = { enA5b, enL5b };
             const options = {
                 method: 'POST',
                 headers: {
@@ -115,7 +115,7 @@
             });
 
             for (item of data) {
-                if (item.txtAsgn) {
+                if (item.enA5b) {
 
                     const root = document.createElement('div');
                     const date = document.createElement('div');
@@ -138,8 +138,8 @@
 
                     //namefile.title = "Test";
 
-                    txt.textContent = `${item.txtAsgn}`;
-                    namefile.href = `${item.uploadLink}`;
+                    txt.textContent = `${item.enA5b}`;
+                    namefile.href = `${item.enL5b}`;
                     const dateString = new Date(item.timestampAsgn).toLocaleString();
                     date.textContent = dateString;
 

@@ -16,8 +16,8 @@
 
         <nav class="navSubject">
 
-            <a href="/subject">الصفحة الرئيسية</a>
-            <a href="/assignments">الواجبات</a>
+            <a href="/subjects/geo/male/geo9">الصفحة الرئيسية</a>
+            <a href="/subjects/geo/male/assign9">الواجبات</a>
             <a href="/aboutSchool">الاشخاص</a>
             <a href="/auth/logout">الخروج</a>
 
@@ -31,7 +31,7 @@
 
         </div>
 
-        <form action="/assignments" id="inputForm" style="display: none;">
+        <form action="/subjects/geo/male/assign9" id="inputForm" style="display: none;">
             <div class="inputDiv" id="inputDiv">
                 <textarea class="form-control" id="inputtext" name="inputtext" rows="6"></textarea>
                 <label for="uploadLink">Upload Link</label>
@@ -72,10 +72,10 @@
             }
         }
         function getVal() {
-            window.location.href = "/assignments";
-            var txtAsgn = document.getElementById('inputtext').value;
-            var uploadLink = document.getElementById('uploadLink').value;
-            const data = { txtAsgn, uploadLink };
+            window.location.href = "/subjects/geo/male/assign9";
+            var geA9b = document.getElementById('inputtext').value;
+            var geL9b = document.getElementById('uploadLink').value;
+            const data = { geA9b, geL9b };
             const options = {
                 method: 'POST',
                 headers: {
@@ -115,7 +115,7 @@
             });
 
             for (item of data) {
-                if (item.txtAsgn) {
+                if (item.geA9b) {
 
                     const root = document.createElement('div');
                     const date = document.createElement('div');
@@ -138,8 +138,8 @@
 
                     //namefile.title = "Test";
 
-                    txt.textContent = `${item.txtAsgn}`;
-                    namefile.href = `${item.uploadLink}`;
+                    txt.textContent = `${item.geA9b}`;
+                    namefile.href = `${item.geL9b}`;
                     const dateString = new Date(item.timestampAsgn).toLocaleString();
                     date.textContent = dateString;
 
@@ -159,7 +159,7 @@
                     btnUpload.innerText = "upload";
 
 
-                    arr.push(item.txtAsgn);
+                    arr.push(item.geA9b);
 
                     (function (index) {
                         btnUpload.addEventListener("click", function () {

@@ -16,10 +16,11 @@
 
         <nav class="navSubject">
 
-            <a href="/subject">الصفحة الرئيسية</a>
-            <a href="/assignments">الواجبات</a>
+            <a href="/subjects/sociology/Male/sociology3">الصفحة الرئيسية</a>
+            <a href="/subjects/sociology/Male/assign3">الواجبات</a>
             <a href="/aboutSchool">الاشخاص</a>
             <a href="/auth/logout">الخروج</a>
+
 
         </nav>
 
@@ -31,7 +32,7 @@
 
         </div>
 
-        <form action="/assignments" id="inputForm" style="display: none;">
+        <form action="/subjects/sociology/Male/assign3" id="inputForm" style="display: none;">
             <div class="inputDiv" id="inputDiv">
                 <textarea class="form-control" id="inputtext" name="inputtext" rows="6"></textarea>
                 <label for="uploadLink">Upload Link</label>
@@ -72,10 +73,10 @@
             }
         }
         function getVal() {
-            window.location.href = "/assignments";
-            var txtAsgn = document.getElementById('inputtext').value;
-            var uploadLink = document.getElementById('uploadLink').value;
-            const data = { txtAsgn, uploadLink };
+            window.location.href = "/subjects/sociology/Male/assign3";
+            var soA3b = document.getElementById('inputtext').value;
+            var soL3b = document.getElementById('uploadLink').value;
+            const data = { soA3b, soL3b };
             const options = {
                 method: 'POST',
                 headers: {
@@ -115,7 +116,7 @@
             });
 
             for (item of data) {
-                if (item.txtAsgn) {
+                if (item.soA3b) {
 
                     const root = document.createElement('div');
                     const date = document.createElement('div');
@@ -138,8 +139,8 @@
 
                     //namefile.title = "Test";
 
-                    txt.textContent = `${item.txtAsgn}`;
-                    namefile.href = `${item.uploadLink}`;
+                    txt.textContent = `${item.soA3b}`;
+                    namefile.href = `${item.soL3b}`;
                     const dateString = new Date(item.timestampAsgn).toLocaleString();
                     date.textContent = dateString;
 
@@ -159,7 +160,7 @@
                     btnUpload.innerText = "upload";
 
 
-                    arr.push(item.txtAsgn);
+                    arr.push(item.soA3b);
 
                     (function (index) {
                         btnUpload.addEventListener("click", function () {

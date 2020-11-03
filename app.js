@@ -34,12 +34,6 @@ server.listen(PORT, () => {
     console.log("server is starting");
 })
 
-const db = mysql.createConnection({
-    host: process.env.DATABASE_HOST,
-    user: process.env.DATABASE_USER,
-    password: process.env.DATABASE_PASSWORD,
-    database: process.env.DATABASE
-})
 
 const publicDir = path.join(__dirname, './public');
 
@@ -84,13 +78,6 @@ app.use((req, res, next) => {
 //app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
-db.connect((error) => {
-    if (error) {
-        console.log(error);
-    } else {
-        console.log("mysql connected...");
-    }
-})
 
 app.use('/', require('./routes/pages'));
 
