@@ -1,10 +1,11 @@
 .container {
     margin-left: auto;
     margin-right: auto;
+    padding-top: 200px;
 }
 
 html, body {
-    background-image: url(images/background.jpg);
+    background-color: #0E587D;
     background-repeat: no-repeat;
     min-height: 100%;
     background-size: cover;
