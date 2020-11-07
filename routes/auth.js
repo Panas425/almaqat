@@ -151,7 +151,7 @@ router.post('/addSubjects', ensureAuthenticated, (req, res) => {
 
 
 router.get('/subject', (req, res) => {
-    database.find({}, (err, data) => {
+    database.find({}).sort({timestamp: -1}).exec(function (err, data) {
         if (err) {
             res.end();
             return;
@@ -168,7 +168,7 @@ router.post('/asgn', (req, res) => {
     res.json(data);
 })
 router.get('/asgn', (req, res) => {
-    database.find({}, (err, data) => {
+    database.find({}).sort({timestamp: -1}).exec(function (err, data) {
         if (err) {
             res.end();
             return;

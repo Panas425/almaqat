@@ -72,6 +72,8 @@ app.use((req, res, next) => {
     res.locals.teacher = req.flash('teacherClass8');
     res.locals.teacher = req.flash('teacherClass9');
     res.locals.teacher = req.flash('teacherClass10');
+    res.locals.teacher = req.flash('male');
+    res.locals.teacher = req.flash('female');
     next();
 });
 

@@ -24,10 +24,10 @@
 
 
         <main>
+            <% if(teacherClass6 != '') { %>
             <div id="wrapper" style="padding-top: 52px;">
-                <% if(teacherClass6 != '') { %>
+
                 <div style="font-size:50px;color: azure;">Male</div>
-                <% } %>
                 <div id="one" class="card" style="width: 200px; float:left">
                     <img src="/images/math.jpg" width="320px" height="125px" class="card-img-top" alt="...">
                     <a href="/subjects/maths/male/math6" target="_blank" class="btn btn-primary">رياضيات </a>
@@ -72,10 +72,11 @@
                     <img src="/images/jordan.jpg" width="320px" height="125px" class="card-img-top" alt="...">
                     <a href="/subjects/nation/male/nation6" target="_blank" class="btn btn-primary">وطنية</a>
                 </div>
-                
+                <% } %>
             </div>
+            <% if(teacherClass6 != '') { %>
             <div id="wrapper" style="padding-top: 250px; padding-bottom: 25px;">
-                <% if(teacherClass6 != '') { %>
+
                 <div style="font-size:50px; color: azure;" class="gender" style="text-align: left;">Female</div>
                 <div id="one" class="card" style="width: 200px; float:left">
                     <img src="/images/math.jpg" width="320px" height="125px" class="card-img-top" alt="...">
@@ -87,15 +88,17 @@
                 </div>
                 <div id="three" class="card" style="width: 200px;float: left;">
                     <img src="/images/islam.jpg" width="320px" height="125px" class="card-img-top" alt="...">
-                    <a href="/subjects/islam/female/islam6" target="_blank" class="btn btn-primary">التربية الإسلامية</a>
+                    <a href="/subjects/islam/female/islam6" target="_blank" class="btn btn-primary">التربية
+                        الإسلامية</a>
                 </div>
                 <div id="four" class="card" style="width: 200px;float: left;">
                     <img src="/images/sociology.jpg" width="320px" height="125px" class="card-img-top" alt="...">
-                    <a href="/subjects/sociology/female/sociology6" target="_blank" class="btn btn-primary">اجتماعيات</a>
+                    <a href="/subjects/sociology/female/sociology6" target="_blank"
+                        class="btn btn-primary">اجتماعيات</a>
                 </div>
                 <div id="six" class="card" style="width: 200px;float: left;">
                     <img src="/images/arabic.jpg" width="320px" height="125px" class="card-img-top" alt="...">
-                    <a href="/subjects/arabic/female/arabic6"  target="_blank" class="btn btn-primary">اللغه العربيه</a>
+                    <a href="/subjects/arabic/female/arabic6" target="_blank" class="btn btn-primary">اللغه العربيه</a>
                 </div>
                 <div id="eight" class="card" style="width: 200px;float: left;">
                     <img src="/images/computer.jpg" width="320px" height="125px" class="card-img-top" alt="...">
@@ -123,6 +126,104 @@
                 </div>
                 <% } %>
             </div>
+            <% if(male != '') { %>
+            <div id="wrapper" style="padding-top: 52px;">
+                <div id="one" class="card" style="width: 200px; float:left">
+                    <img src="/images/math.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/maths/male/math6" target="_blank" class="btn btn-primary">رياضيات </a>
+                </div>
+                <div id="two" class="card" style="width: 200px;float: left;">
+                    <img src="/images/science.jpg" class="card-img-top" alt="...">
+                    <a href="/subjects/science/male/science6" target="_blank" class="btn btn-primary">علوم</a>
+                </div>
+                <div id="three" class="card" style="width: 200px;float: left;">
+                    <img src="/images/islam.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/islam/male/islam6" target="_blank" class="btn btn-primary">التربية الإسلامية</a>
+                </div>
+                <div id="four" class="card" style="width: 200px;float: left;">
+                    <img src="/images/sociology.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/sociology/male/sociology6" target="_blank" class="btn btn-primary">اجتماعيات</a>
+                </div>
+                <div id="six" class="card" style="width: 200px;float: left;">
+                    <img src="/images/arabic.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/arabic/male/arabic6" target="_blank" class="btn btn-primary">اللغه العربيه</a>
+                </div>
+                <div id="eight" class="card" style="width: 200px;float: left;">
+                    <img src="/images/computer.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/computer/male/computer6" target="_blank" class="btn btn-primary">حاسوب</a>
+                </div>
+                <div id="nine" class="card" style="width: 200px;float: left;">
+                    <img src="/images/vocational.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/vocational/male/vocational6" target="_blank" class="btn btn-primary">المهني</a>
+                </div>
+                <div id="seven" class="card" style="width: 200px;float: left;">
+                    <img src="/images/english.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/english/male/english6" target="_blank" class="btn btn-primary">English</a>
+                </div>
+                <div id="12" class="card" style="width: 200px;float: left;">
+                    <img src="/images/history.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/history/male/history6" target="_blank" class="btn btn-primary">تاريخ</a>
+                </div>
+                <div id="13" class="card" style="width: 200px;float: left;">
+                    <img src="/images/geo.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/geo/male/geo6" target="_blank" class="btn btn-primary">جغرافيا</a>
+                </div>
+                <div id="13" class="card" style="width: 200px;float: left;">
+                    <img src="/images/jordan.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/nation/male/nation6" target="_blank" class="btn btn-primary">وطنية</a>
+                </div>
+                <% } %>
+            </div>
+            <% if(female != '') { %>
+            <div id="wrapper" style="padding-top: 90px; padding-bottom: 25px;">
+
+                <div id="one" class="card" style="width: 200px; float:left">
+                    <img src="/images/math.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/maths/female/math6" target="_blank" class="btn btn-primary">رياضيات </a>
+                </div>
+                <div id="two" class="card" style="width: 200px;float: left;">
+                    <img src="/images/science.jpg" class="card-img-top" alt="...">
+                    <a href="/subjects/science/female/science6" target="_blank" class="btn btn-primary">علوم</a>
+                </div>
+                <div id="three" class="card" style="width: 200px;float: left;">
+                    <img src="/images/islam.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/islam/female/islam6" target="_blank" class="btn btn-primary">التربية
+                        الإسلامية</a>
+                </div>
+                <div id="four" class="card" style="width: 200px;float: left;">
+                    <img src="/images/sociology.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/sociology/female/sociology6" target="_blank"
+                        class="btn btn-primary">اجتماعيات</a>
+                </div>
+                <div id="six" class="card" style="width: 200px;float: left;">
+                    <img src="/images/arabic.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/arabic/female/arabic6" target="_blank" class="btn btn-primary">اللغه العربيه</a>
+                </div>
+                <div id="eight" class="card" style="width: 200px;float: left;">
+                    <img src="/images/computer.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/computer/female/computer6" target="_blank" class="btn btn-primary">حاسوب</a>
+                </div>
+                <div id="nine" class="card" style="width: 200px;float: left;">
+                    <img src="/images/vocational.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/vocational/female/vocational6" target="_blank" class="btn btn-primary">المهني</a>
+                </div>
+                <div id="seven" class="card" style="width: 200px;float: left;">
+                    <img src="/images/english.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/english/female/english6" target="_blank" class="btn btn-primary">English</a>
+                </div>
+                <div id="12" class="card" style="width: 200px;float: left;">
+                    <img src="/images/history.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/history/female/history6" target="_blank" class="btn btn-primary">تاريخ</a>
+                </div>
+                <div id="13" class="card" style="width: 200px;float: left;">
+                    <img src="/images/geo.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/geo/female/geo6" target="_blank" class="btn btn-primary">جغرافيا</a>
+                </div>
+                <div id="13" class="card" style="width: 200px;float: left;">
+                    <img src="/images/jordan.jpg" width="320px" height="125px" class="card-img-top" alt="...">
+                    <a href="/subjects/nation/female/nation6" target="_blank" class="btn btn-primary">وطنية</a>
+                </div>
+                <% } %>
         </main>
         <footer>
 
