@@ -231,6 +231,9 @@ router.get("/classes/class1", (req, res) => {
             });
         }
     }
+    else{
+        return res.render('loginStudent');
+    }
 });
 router.get("/classes/class2", (req, res) => {
     if (req.isAuthenticated()) {
@@ -346,6 +349,9 @@ router.get("/subjects/maths/Male/math1", (req, res) => {
                 teacher: ""
             });
         }
+    }
+    else{
+        return res.render('loginStudent');
     }
 });
 router.get("/subjects/maths/Female/math1", (req, res) => {
