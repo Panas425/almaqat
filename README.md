@@ -1,4 +1,5 @@
-#Almaqat
+# Almaqat
+
 Overview
 Almaqat is a full-stack web application built with Node.js, Express, and SQLite. The project follows the MVC (Model-View-Controller) architecture and appears to be configured for deployment on Heroku (using a Procfile) and Google App Engine (using app.yaml).
 
