@@ -14,6 +14,7 @@ Frontend	HTML, CSS, JavaScript
 Deployment	Heroku, Google App Engine
 Project Structure
 text
+
 almaqat/
 ├── app.js              # Main application entry point
 ├── controllers/        # Business logic and request handlers
@@ -27,6 +28,8 @@ almaqat/
 ├── app.yaml            # Google App Engine configuration
 ├── package.json        # Node.js dependencies and scripts
 └── .gitignore          # Git ignore rules
+
+
 Getting Started
 Prerequisites
 Node.js (version specified in package.json)
