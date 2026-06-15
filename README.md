@@ -17,16 +17,27 @@ text
 
 almaqat/
 ├── app.js              # Main application entry point
+
 ├── controllers/        # Business logic and request handlers
+
 ├── models/             # Database models and schema
+
 ├── routes/             # URL route definitions
+
 ├── views/              # EJS templates (HTML with embedded JS)
+
 ├── public/             # Static assets (CSS, client-side JS, images)
+
 ├── config/             # Configuration files
+
 ├── messages.db         # SQLite database file
+
 ├── Procfile            # Heroku deployment configuration
+
 ├── app.yaml            # Google App Engine configuration
+
 ├── package.json        # Node.js dependencies and scripts
+
 └── .gitignore          # Git ignore rules
 
 
