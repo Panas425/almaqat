@@ -16,6 +16,7 @@ Project Structure
 text
 
 almaqat/
+
 ├── app.js              # Main application entry point
 
 ├── controllers/        # Business logic and request handlers
