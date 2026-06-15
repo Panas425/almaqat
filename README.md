@@ -1,20 +1,30 @@
-Almaqat
-Overview
+# Almaqat
 
-Almaqat is a full-stack web application built with Node.js, Express, and SQLite, following the MVC (Model-View-Controller) architecture.
+## Overview
 
-The project is structured for deployment on Heroku (via Procfile) and Google App Engine (via app.yaml).
+**Almaqat** is a full-stack web application built with **Node.js**, **Express**, and **SQLite**, following the **MVC (Model-View-Controller)** architecture.
 
-The name “Almaqat” represents the project’s internal concept or idea and can be further refined with a more specific product description in the future.
+The project is structured for deployment on **Heroku** (via `Procfile`) and **Google App Engine** (via `app.yaml`).
 
-Tech Stack
-Layer	Technology
-Backend	Node.js, Express
-Database	SQLite (messages.db)
-Frontend	HTML, CSS, JavaScript
-View Engine	EJS
-Deployment	Heroku, Google App Engine
-Project Structure
+> The name “Almaqat” represents the project’s internal concept or idea and can be further refined with a more specific product description in the future.
+
+---
+
+## Tech Stack
+
+| Layer      | Technology |
+|------------|------------|
+| Backend    | Node.js, Express |
+| Database   | SQLite (`messages.db`) |
+| Frontend   | HTML, CSS, JavaScript |
+| View Engine| EJS |
+| Deployment | Heroku, Google App Engine |
+
+---
+
+## Project Structure
+
+```
 almaqat/
 ├── app.js              # Main application entry point
 ├── controllers/        # Business logic & request handlers
@@ -28,11 +38,22 @@ almaqat/
 ├── app.yaml            # Google App Engine config
 ├── package.json        # Dependencies & scripts
 └── .gitignore          # Git ignored files
-Getting Started
-Prerequisites
-Node.js (as specified in package.json)
-npm or yarn
-Installation
+```
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (as specified in `package.json`)
+- npm or yarn
+
+---
+
+### Installation
+
+```bash
 # Clone the repository
 git clone https://github.com/Panas425/almaqat.git
 
@@ -41,60 +62,83 @@ cd almaqat
 
 # Install dependencies
 npm install
-Running Locally
+```
+
+---
+
+### Running Locally
+
+```bash
 node app.js
+```
 
 Or with nodemon:
 
+```bash
 npm run dev
+```
 
 The app will run on:
 
+```
 http://localhost:3000
+```
 
-(or the port defined in your environment/config)
+---
 
-Deployment
-Heroku
-heroku create your-app-name
-git push heroku main
-Google App Engine
-gcloud app deploy
-API Routes
 
-Routes are defined inside the routes/ directory.
+## API Routes
+
+Routes are defined inside the `routes/` directory.
 
 Typical endpoints may include:
 
-GET / – Home page
-Additional routes defined in the project
+- `GET /` – Home page  
+- Additional routes defined in the project
 
-This section should be updated after reviewing the full route definitions.
+> This section should be updated after reviewing the full route definitions.
 
-Database
+---
 
-The project uses SQLite with a file-based database: messages.db.
+## Database
 
-Inspecting the database:
+The project uses **SQLite** with a file-based database: `messages.db`.
+
+### Inspecting the database:
+
+```bash
 sqlite3 messages.db
 .tables
 .schema table_name
-Key Files
-File	Purpose
-app.js	Initializes Express app, middleware, and routes
-controllers/	Handles business logic
-models/	Database queries and structure
-views/	EJS templates
-Procfile	Heroku start command
-app.yaml	Google Cloud deployment config
-Future Improvements
-Add environment variable support (dotenv)
-Improve error handling middleware
-Write unit tests for controllers and models
-Move sensitive config to environment variables
-Fully document API endpoints
-Expand project description for clarity
-Contributing
+```
 
-This is currently a personal project.
-For suggestions or contributions, please contact the repository owner: @Panas425
+---
+
+## Key Files
+
+| File | Purpose |
+|------|--------|
+| `app.js` | Initializes Express app, middleware, and routes |
+| `controllers/` | Handles business logic |
+| `models/` | Database queries and structure |
+| `views/` | EJS templates |
+| `Procfile` | Heroku start command |
+| `app.yaml` | Google Cloud deployment config |
+
+---
+
+## Future Improvements
+
+- Add environment variable support (`dotenv`)
+- Improve error handling middleware
+- Write unit tests for controllers and models
+- Move sensitive config to environment variables
+- Fully document API endpoints
+- Expand project description for clarity
+
+---
+
+## Contributing
+
+This is currently a personal project.  
+For suggestions or contributions, please contact the repository owner: **@Panas425**
